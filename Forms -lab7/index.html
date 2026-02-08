@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>login forms</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section>
+            <h2>Aplication form</h2>
+        <form action="">
+            <table>
+                <tr>
+                    <td><label for="username">First Name</label> </td>
+                    <td><input type="text" name="username" id="username"></td>
+                    <td> <label for="username">LastName</label></td>
+                    <td><input type="text" name="username" id="username"></td>
+
+                </tr>
+                <tr>
+                    <td><label for="date">Date of birth</label></td>
+                    <td><input type="date" name="date" id="date"></td>
+                    <td> <label for="age">Age</label></td>
+                    <td><input type="number" name="age" id="age"></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender</label></td>
+                     <td><select name="gender" id="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    </select></td>
+                 
+                    <td><label for="email">Email </label></td>
+                    <td><input type="email" name="email" id="email" placeholder="enter you email"></td>
+
+                </tr>
+            </table>
+            <!--radio button about position-->
+             <label>Positions Available:</label>
+            <input type="radio" id="junior" name="position" value="junior-developer">
+            <label for="junior">Junior Developer</label>
+            <input type="radio" id="mid" name="position" value="Mid-level Developer">
+            <label for="mid">Mid-level Developer</label>
+            <input type="radio" id="senior" name="position" value="Senior Developer">
+            <label for="senior">Senior Developer</label>
+<br>        <!--checkbox posision-    -->
+            <label>Programming Languages:</label>
+            <input type="checkbox" id="java" name="language" value="java">
+            <label for="java">Java</label>
+             <input type="checkbox" id="javascript" name="language" value="javascript">
+             <label for="javascript">JavaScript</label>
+            <input type="checkbox" id="python" name="language" value="python">
+            <label for="python">Python</label><br>
+            <!--password field-->
+            <table>
+                <tr>
+                    <td><label for="password">Password</label></td>
+                    <td><input type="password" name="password" id="password"><br></td>
+                    <td><label for="cpassword">Confirm Password</label></td>
+                    <td><input type="cpassword" name="cpassword" id="cpassword"><br></td>
+                </tr>
+            </table>
+            
+            <div >
+                <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+            </div>
+            
+
+
+        </form>
+        </section>
+        <section>
+            <h2>Main Form title</h2>
+            <form action="">
+                <label for="fullname">Full Name</label>
+                <input type="text" name="fullname" id="fullname">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email"><br>
+                <label for="longtitle">Long Title</label>
+                <input type="text" name="longtitle" id="longtitle"><br>
+                <label for="month">Year started</label> <br>
+                <select name="month" id="month">
+                    <option value="january">January</option>
+                    <option value="february">February</option>
+                    <option value="march">March</option>
+                    <option value="april">April</option>
+                    <option value="may">May</option>
+                    <option value="june">June</option>
+                    <option value="july">July</option>
+                    <option value="august">August</option>
+                    <option value="september">September</option>
+                    <option value="october">October</option>
+                    <option value="november">November</option>
+                    <option value="december">December</option>
+                </select>
+                <input type="number" name="number"placeholder="25" style="width: 40px;">
+                <input type="number" name ="number"placeholder="2008" style="width: 70px;">
+                <div class="products">
+                <div class="item">
+                <label for="other1"> Other details 1</label>
+                <input type="nummber"name="other1" id="other1" placeholder="25" style="width: 70px;">
+                </div>
+                <div class="item">
+                <label for="other2"> Other details 2</label>
+                <input type="number" name="other2" id="other2"placeholder="25" style="width: 70px;">
+                </div>
+                <div class="item">
+                <label for="other3"> Other details3</label>
+                <input type="number" name="other3" id="other3" placeholder="25" style="width: 70px;">
+                </div>
+                </div>
+                <label for="text">Details and More Words Here, Details and More Words Here Details and
+                More Words Here Details and More Words Here Details and More Words
+                Here</label> <br>
+                <textarea name="comment" id="text"
+                placeholder="you comment here" cols="90" rows="6">
+            
+                </textarea><br>
+
+                <input type="submit" value="Submit">
+
+
+            </form>
+        </section>
+        <section>
+            <h2>Main Another Form title</h2>
+            <form action="">
+            <label for="description">Description</label>
+            <input type="text" name="description" id="description">
+            <label for="Products">Products</label>
+            <select name="Products" id="Products">
+                <option value="pr1">Product Item 1</option>
+                <option value="pr2">Product Item 2</option>
+                <option value="pr3">Product Item 3</option>
+            </select><br>
+           
+            <!--products part-->
+            <div class="products">
+            <div class="item">
+                <label for="item1">Item 1</label>
+                <input type="text" name="item1" id="item1">
+            </div>
+            <div class="item">
+                <label for="item2">Item 2</label>
+                <input type="text" name="item2" id="item2">
+            </div>
+            <div class="item">
+                <label for="item3">Item 3</label>
+                <input type="text" name="item3" id="item3">
+            </div>
+            </div> 
+            <div class="products.column">
+            <label for="selectp">Select products</label> 
+            <div class="products">
+            
+            <label for="prod">Products</label>
+             <select name="prod" id="prod">
+                <option value="pr1">Product Item 1</option>
+                <option value="pr2">Product Item 2</option>
+                <option value="pr3">Product Item 3</option>
+            </select>
+            <input type="number" placeholder="25" style="width: 40px;">
+            <label for="prod">Products</label>
+             <select name="prod" id="prod">
+                <option value="pr1">Product Item 1</option>
+                <option value="pr2">Product Item 2</option>
+                <option value="pr3">Product Item 3</option>
+            </select>
+            <input type="number" placeholder="25" style="width: 40px;">
+            </div>
+            </div>
+            
+            <!--details part-->
+            <div class="products">
+            <div class="item">
+                <label for="detail1">Other Details1</label>
+                <input type="number" name ="detail1" id="detail1" placeholder="25" style="width: 40px;">
+            </div>
+            <div class="item">
+                <label for="detail2">Other Details1</label>
+                <input type="number" name ="detail2" id="detail2" placeholder="25" style="width: 40px;">
+            </div>
+            <div class="item">
+                <label for="detail3">Other Details3</label>
+                <input type="number" name ="detail3" id="detail3" placeholder="25" style="width: 40px;">
+            </div>
+            <div class="item">
+                <label for="detail4">Other Details4</label>
+                <input type="number" name ="detail4" id="detail4" placeholder="25" style="width: 40px;">
+            </div>
+            </div>
+            <!--user details-->
+<div class="products">
+    <div class="item">
+        <label for="title">Title</label>
+        <input type="text" name="title" id="title">
+    </div>
+    <div class="item">
+        <label for="firstn">First Name</label>
+        <input type="text" name="firstn" id="firstn">
+    </div>
+    <div class="item">
+        <label for="Lastn">Last name</label>
+        <input type="text" name="Lastn" id="Lastn">
+    </div>
+
+</div>
+<div class="item row">
+    <label for="inline label">Inline Label</label>
+    <input type="text" name="inline label" id="inline label">
+</div>
+<div class="products">
+    <div class="item row">
+    <label for="inline label">Inline Label</label>
+    <input type="text" name="inline label" id="inline label">
+</div>
+<div class="item row">
+    <label for="inline label">Inline Label</label>
+    <input type="text" name="inline label" id="inline label">
+</div>
+</div>
+<button>send</button>
+</form>
+        </section>
+        <!--student registration form-->
+        <section>
+            <h2>Student Registration form</h2>
+            <form action="">
+                <div class="products.column">
+                <div class="item.row">
+                    <label for="rolln">Roll no.:</label>
+                    <input type="text" name ="rolln" id="rolln">
+                </div>
+                <div class="item.row">
+                    <label for="studentn">Student name:</label>
+                    <input type="text" name ="studentn" id="studentn" placeholder="First Name">
+                    <input type="text" name ="studentn" id="studentn" placeholder="Last Name">
+
+                </div>
+                <div class="item.row">
+                    <label for="fathern">Father's name</label>
+                    <input type="text" name="fathern" id="fathern">
+                </div>
+                <div class="item.row">
+                    <label for="date">Date of birth:</label>
+                    <input type="number" name="date" id="date" placeholder="Day" style="width: 40px;">
+                    <input type="number" name="date" id="date" placeholder="Month" style="width: 40px;">
+                    <input type="number" name="date" id="date" placeholder="Year" style="width: 70px;">
+                    <label for="structure">(DD-MM-YYYY)</label>
+                </div>
+                <div class="item.row">
+                    <label for="mobilen">Mobile no. :</label>
+                    <input type="number" name="mobilen" id="mobilen">
+                    <input type="tel" name="mobilen" id="mobilen" placeholder="XX-XXX-XXX">
+
+                </div>
+                <div class="item.row">
+                    <label for="email">Email id:</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="item.row">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div class="item.row">
+                    <label for="gender">Gender:</label>
+                    <input type="radio"name="gender" id="male" value="male" />
+                    <label for="male">Male</label>
+                     <input type="radio"name="gender" id="female" value="female" />
+                    <label for="female">Female</label>
+                </div>
+                <div class="item.row">
+                    <label for="department">Departament</label>
+                    <input type="checkbox" name="cse" id="cse">
+                    <label for="cse">CSE</label>
+                    <input type="checkbox" name="it" id="it">
+                    <label for="it">IT</label>
+                    <input type="checkbox" name="ece" id="ece">
+                    <label for="ece">ECE</label>
+                    <input type="checkbox" name="civil" id="civil">
+                    <label for="civil">Civil</label>
+                    <input type="checkbox" name="mech" id="mech">
+                    <label for="mech">Mech</label>
+                </div>
+                <div class="item.row">
+                    <label for="course">Course</label>
+                    <select name="course" id="course">
+                        <option value="programare">Programare si analiza produselor program</option>
+                        <option value="web">Administrarea aplicatiilor web</option>
+                        <option value="secretariat">Secretariat</option>
+                        <option value="jurisprudenta">Jurisprudenta</option>
+                        <option value="operatoror">Operatori</option>
+                        <option value="contabilitate">Contabilitate</option>
+                        <option value="finante">Finante si banci</option>
+                        <option value="impozite">Taxe si impozite</option>
+                    </select>
+                </div>
+                <div class="item.row">
+                <label for="photo">Student photo</label>
+                <input type="file" id="photo" name="photo">
+                </div>
+                <div class="item.row">
+                    <label for="city">City</label>
+                    <input type="text" name="city" id="city">
+                </div>
+                <div class="item.row">
+                    <label for="address">Address</label>
+                    <textarea name="address" id="address"></textarea>
+                </div>
+                <button>Register</button>
+
+            </div>
+            </form>
+        </section>
+    </body>
+</html>

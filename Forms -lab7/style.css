@@ -1,0 +1,29 @@
+section{
+    width: 500px;
+    margin: 50px;
+}
+
+.item{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+.item row{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.products{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.products column{
+     display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
