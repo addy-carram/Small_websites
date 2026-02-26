@@ -1,0 +1,31 @@
+*{
+    box-sizing: 1000px;
+    margin:0px;
+    border: none;
+    padding:0px
+}
+h1{
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+h2{
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 125%;
+}
+.container{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    align-content: center;
+}
+
+.link .chip{
+    padding: 20px;
+}
+
+header nav a{
+color: blueviolet;
+}

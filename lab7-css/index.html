@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>Produse – Selectorii CSS</title>
+ <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+ <header id="top">
+ <h1>Magazin mini</h1>
+ <p class="subtitle">Exersăm selectorii CSS</p>
+ <nav>
+ <a href="#" class="link">Acasă</a>
+ <a href="#" class="link" data-type="promo">Promo</a>
+ <a href="#" class="link">Contact</a>
+ </nav>
+ </header>
+ <main class="container">
+ <section class="panel">
+ <h2>Filtre</h2>
+ <ul class="filters">
+ <li><a href="#" class="chip" data-filter="all">Toate</a></li>
+ <li><a href="#" class="chip" data-filter="food">Alimente</a></li>
+ <li><a href="#" class="chip" data-filter="tech">Tehnică</a></li>
+ </ul>
+ </section>
+ <section class="grid" id="products">
+ <article class="card featured" data-category="food">
+ <h3 class="title">Miere naturală</h3>
+ <p class="desc">Produs local, 500g.</p>
+ <p class="price" data-currency="MDL">120</p>
+ <button class="btn" data-action="buy">Cumpără</b
