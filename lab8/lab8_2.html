@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mini-portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Formular</h1>
+    <form method="post">
+      <!-- Textbox Nume -->
+      <label for="nume">Nume:</label>
+      <input type="text" id="nume" name="nume" />
+      <br /><br />
+
+      <!-- Textbox Prenume -->
+      <label for="prenume">Prenume:</label>
+      <input type="text" id="prenume" name="prenume" />
+      <br /><br />
+
+      <!-- Radio Button An -->
+      <p>Anul de studiu:</p>
+      <input type="radio" id="an1" name="an" value="1" />
+      <label for="an1">Anul 1</label><br />
+
+      <input type="radio" id="an2" name="an" value="2" />
+      <label for="an2">Anul 2</label><br />
+
+      <input type="radio" id="an3" name="an" value="3" />
+      <label for="an3">Anul 3</label><br />
+
+      <input type="radio" id="an4" name="an" value="4" />
+      <label for="an4">Anul 4</label>
+      <br /><br />
+
+      <!-- List Box Specialitatea -->
+      <label for="specialitatea">Specialitatea:</label>
+      <select id="specialitatea" name="specialitatea">
+        <option value="calculatoare">Calculatoare</option>
+        <option value="tehnologia_informatiei">Tehnologia Informaţiei</option>
+      </select>
+      <br /><br />
+
+      <!-- Check Box -->
+      <input
+        type="checkbox"
+        id="ii_place_programarea"
+        name="ii_place_programarea"
+        value="da"
+      />
+      <label for="ii_place_programarea">Îmi place programarea</label>
+      <br /><br />
+
+      <!-- Butoane -->
+      <input type="submit" value="Trimite" />
+      <input type="reset" value="Resetează" />
+    </form>
+  </body>
+</html>
