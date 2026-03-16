@@ -1,17 +1,17 @@
 *{
-    box-sizing: 1000px;
-    margin:0px;
-    border: none;
-    padding:0px
+    box-sizing: border-box;
+    margin: none;
+    padding:none;
 }
 h1{
     font-size: 60px;
     font-weight: 500;
     line-height: 120%;
+    color: rgb(252, 252, 209);
 }
 
 h2{
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 500;
     line-height: 125%;
 }
@@ -21,11 +21,63 @@ h2{
     margin: auto;
     align-content: center;
 }
+#top{
+    background-color: rgb(100, 84, 0);
+    padding: 35px;
+}
 
-.link .chip{
-    padding: 20px;
+.link, .chip{
+    padding: 5px;
+    text-decoration: none;
 }
 
 header nav a{
-color: blueviolet;
+color: rgb(212, 173, 247);
 }
+.grid{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+}
+.grid > .card{
+border: 1px solid pink ;
+box-sizing: border-box;
+padding: 20px;
+width: 200px;
+}
+ [data-type="promo"]{
+    color: rgb(159, 3, 184);
+    font-size: 18px;
+    background-color: rgb(246, 195, 227);
+ }
+
+ [data-currency="MDL"]{
+    font-weight: 900;
+ }
+
+ .card.featured{
+    border: 2px solid rgb(60, 60, 3);
+    background-color: rgb(221, 220, 151);
+ }
+
+ .btn:hover{
+    color: rgb(238, 236, 240);
+    background-color: rgb(122, 20, 45);
+    padding: 5px;
+ }
+ .chip:hover{
+    padding: 5px;
+    background-color: rgb(240, 232, 72);
+ }
+
+ button:disabled{
+    cursor: not-allowed;
+    color: grey;
+ }
+ .card:not(.sold){
+    background-color: rgb(243, 247, 245);
+ }
+ p{
+    color: rgb(5, 5, 4);
+ }
