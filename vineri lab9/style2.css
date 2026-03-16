@@ -1,0 +1,18 @@
+body{
+    background-color:#AFDEF8 ;
+    background-image: url(cosbuc.jpg);
+    background-repeat: no-repeat;
+    position: top right;
+    background-attachment: fixed;
+}
+
+p{
+
+}
+h1{
+   background-color: #5D89CA; 
+   color: white;
+}
+.rosu {
+    color: red;
+}
