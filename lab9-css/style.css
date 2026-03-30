@@ -1,0 +1,107 @@
+
+.card-content{
+
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+    justify-content: space-between;
+    gap: 30px;
+
+}
+.card{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding:  20px;
+    border: 2px solid mistyrose;
+    margin: 10px;
+}
+img{
+    max-width: 300px;
+    max-width: fit-content;
+    padding-top: 20px;
+}
+main{
+    box-sizing: content-box;
+    margin: 80px;
+    margin-bottom: 100px;
+    padding: 50px;
+    border: 4px solid mistyrose;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+section{
+    margin: 50px;
+}
+h1{
+    text-align: center;
+    color: rgb(170, 4, 112);
+}
+main p{
+    text-align: center;
+    color: rgb(124, 88, 112);
+}
+h2{
+    color: rgb(170, 4, 112);
+}
+h3{
+    color: rgb(107, 28, 80);
+}
+p{
+   color: rgb(124, 88, 112); 
+}
+button{
+    padding: 11px 27px;
+    background-color: rgb(235, 79, 178);
+    color: rgb(251, 244, 243);
+    font-size: 20px;
+    border: 2px solid rgb(170, 4, 112);
+}
+button:hover{
+    background-color: mistyrose;
+    color:rgb(170, 4, 112) ;
+}
+footer{
+    margin-top:100px;
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 600px;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+footer h2{
+    text-align: center;
+}
+#zona{
+    border: 4px  dashed rgb(170, 4, 112);
+    border-radius: 50px;
+    padding: 50px;
+    margin:30px;
+    background-color: mistyrose;
+}
+#zona .div01{
+border: 2px  solid rgb(221, 208, 216);
+    padding: 50px;
+    margin:30px;
+    background-color: rgb(231, 231, 231);
+    border-radius: 15px;
+}
+#zona .div2{
+    border: 2px  solid rgb(255, 0, 157);
+    padding: 50px;
+    margin:30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+}
+.div1{
+    border: 2px  solid rgb(255, 0, 157);
+    padding: 50px;
+    margin:30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+}
