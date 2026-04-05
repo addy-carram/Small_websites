@@ -7,12 +7,16 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="banner">
+      <p>🎉 This weekend only — Kids under 10 enter FREE! 🎉</p>
+    </div>
     <header>
       <img
         class="icon"
         src="images/georg-hirmer-zlXPkpS2ePw-unsplash.png"
         alt="logo of zoo"
       />
+      <button class="hamburger" id="hamburger">☰</button>
       <nav>
         <a href="#Home">Home</a>
         <a href="#About">About</a>
@@ -26,7 +30,7 @@
     </header>
     <main id="Home">
       <div class="content">
-        <div>
+        <div class="card">
           <h1>Where the Wild Comes to Life</h1>
           <p>
             Step into a world of wonder. Discover thousands of incredible
@@ -67,6 +71,7 @@
       <h2>Top Animals</h2>
       <div class="content">
         <div class="content-card">
+          <div class="eticket"><p>Dangerouse</p></div>
           <div class="card">
             <img
               src="images/photo-1614027164847-1b28cfe1df60.avif"
@@ -87,6 +92,7 @@
           </div>
         </div>
         <div class="content-card">
+          <div class="eticket y"><p>Exotic</p></div>
           <div class="card">
             <img src="images/elefant.avif" alt="African Elephant" />
             <div class="card-text">
@@ -107,6 +113,7 @@
           </div>
         </div>
         <div class="content-card">
+          <div class="eticket g"><p>Friendly</p></div>
           <div class="card">
             <img src="images/giraffe.avif" alt="giraffe" />
             <div class="card-text">
@@ -127,6 +134,7 @@
           </div>
         </div>
         <div class="content-card">
+          <div class="eticket"><p>Dangerouse</p></div>
           <div class="card">
             <img src="images/snow leopars.avif" alt="snow leopard" />
             <div class="card-text">
@@ -147,6 +155,7 @@
           </div>
         </div>
         <div class="content-card">
+          <div class="eticket g"><p>Friendly</p></div>
           <div class="card">
             <img src="images/macaw.avif" alt="macaw" />
             <div class="card-text">
@@ -168,6 +177,7 @@
           </div>
         </div>
         <div class="content-card">
+          <div class="eticket g"><p>Friendly</p></div>
           <div class="card">
             <img src="images/orangutan.avif" alt="orangutan" />
             <div class="card-text">
@@ -290,10 +300,7 @@
         </div>
       </div>
     </section>
-    <div class="banner">
-      🎉
-      <p>This weekend only — Kids under 10 enter FREE!</p>
-    </div>
+
     <section id="Map">
       <h2>Map</h2>
       <iframe
