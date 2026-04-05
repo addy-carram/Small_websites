@@ -1,30 +1,82 @@
-* {
+:root {
    
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; 
-    font-family: 'Urbanist', sans-serif;
+    
     --primary-color: rgb(213, 255, 207);
     --secondary-color: rgb(69, 123, 157);
     --background-color: rgb(2, 17, 0);
     --text-color: rgb(109, 161, 101);
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Urbanist', sans-serif;
+}
 
 .content{
     display: flex;
     flex-direction: row;
+    gap: 40px;
     
+}
+#Animals .content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 pe rând */
+    gap: 40px;
+    
+}
+#Animals .content-card{
+    padding: 30px;
+    border: 2px solid var(--text-color);
+    border-radius: 30px;
 }
 .card{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 40px;
 }
- img{
-    width: 200px;
+ .content-card img{
+    width: 100%;
     height: 400px;
-    object-fit: cover;
+    object-fit: cover ;
+    object-position: top;
+    border-radius: 30px;
+
 }
+.card-text{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.card button{
+    background-color: transparent;
+    border: solid 1px var(--text-color);
+    color: var(--text-color);
+    
+}
+.card button:hover{
+    color: var(--text-color);
+    background-color: var(--primary-color);
+}
+.icon-text-content .icon{
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: none;
+}
+.icon-text-content{
+    display: flex;
+    flex-direction: row;
+    align-items: bottom;
+    gap: 15px;
+
+}
+#Animals p{
+    font-size: 18px;
+    font-style: normal;
+}
+
 header{
     display: flex;
     justify-content: space-between;
@@ -65,7 +117,7 @@ main{
     text-align: center;
     justify-content: center;
     background-image: linear-gradient(to top, rgba(0, 25, 2, 0.058), rgba(0, 6, 0, 0.928)), 
-                      url(daniel-pelaez-duque-HTVUiryU9eo-unsplash.jpg);
+                      url(images/daniel-pelaez-duque-HTVUiryU9eo-unsplash.jpg);
     background-size: cover;
     background-position: center 20%;
 }
@@ -80,24 +132,21 @@ main .content{
     gap: 20px;
 
 }
- .icon{
-    width: 32px;
-    height: 32px;
-    object-fit: cover;
-}
-.icon-text-content{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
+ 
 h1{
-    font: 60px 'Urbanist',sans-serif ;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
     color: var(--primary-color)
 
 
 }
 p{
-    font: 20px 'Urbanist',sans-serif 400 italic;
+    
+    font-family: 'Urbanist', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: italic;
     color: var(--text-color)
 }
 button{
@@ -128,9 +177,136 @@ h2{
     font-size: 45px;
     text-align:center;
 }
+h3{
+    font-size: 30px;
+}
 section{
-    margin: 150px auto;
+    margin: 150px 50px;
     display: flex;
     flex-direction: column;
     gap: 40px;
+}
+#About .text-content{
+    width: 40%;
+    height:auto;
+    padding:30px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: left;
+}
+#About .content img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+#Tickets {
+    .card{
+        border: 1px solid var(--text-color);
+        border-radius: 30px;
+        padding: 40px;
+        gap: 40px;
+        
+    }
+    button:hover{
+        background-color: var(--background-color);
+        color: var(--primary-color);
+    }
+
+}
+#Tickets .important{
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    button{
+        background-color: var(--background-color);
+        color: var(--primary-color);
+    }
+    h4{
+        font-size: 30px;
+    }
+    
+}
+h4{
+    font-size: 25px;
+}
+#Tickets .content{
+    justify-content: space-between;
+    margin: auto 100px;
+
+
+}
+th{
+    font-size: 30px;
+    color: var(--text-color);
+    padding: 20px;
+}
+td{
+    font: 25px;
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px;
+}
+tr{
+    text-align: center;
+    
+}
+table{
+    width: 50%;
+    margin:  auto;
+    border:1px solid var(--text-color);
+    border-collapse: collapse;
+
+}
+footer {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 50px;
+    margin-top: 100px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 250px;
+}
+
+.footer-section h4 {
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.footer-section ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.footer-section ul li a:hover {
+    color: var(--primary-color);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--text-color);
+    font-size: 14px;
 }

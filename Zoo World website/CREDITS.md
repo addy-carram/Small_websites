@@ -8,6 +8,9 @@ All assets are used for educational and non-commercial purposes (school project 
 | ---------- | ------------------- | ----------------------------------------------------------------------------------- |
 | Background | Daniel Pelaez Duque | [Unsplash](https://unsplash.com/photos/brown-and-white-4-legged-animal-HTVUiryU9eo) |
 
+Photo by <a href="https://unsplash.com/@nxn?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nikolay Tchaouchev</a> on <a href="https://unsplash.com/photos/two-giraffe-and-three-zebra-on-green-grass-field-under-trees-at-daytime-ttpNCevA1tA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+|
+
 ## 🐾 Animal Icons
 
 | Icon         | Author         | Source                                                       |
@@ -20,3 +23,5 @@ All assets are used for educational and non-commercial purposes (school project 
 | Orangutan    | Flat Icons     | [Flaticon](https://www.flaticon.com/free-icons/orangutan)    |
 | Hippo        | Freepik        | [Flaticon](https://www.flaticon.com/free-icons/hippo)        |
 | Otter        | Amethyst prime | [Flaticon](https://www.flaticon.com/free-icons/otter)        |
+
+<a href="https://www.flaticon.com/free-icons/otter" title="otter icons">Otter icons created by Amethyst prime - Flaticon</a>
