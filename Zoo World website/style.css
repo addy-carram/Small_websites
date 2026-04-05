@@ -144,9 +144,8 @@ h1{
 p{
     
     font-family: 'Urbanist', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
-    font-style: italic;
     color: var(--text-color)
 }
 button{
@@ -259,11 +258,22 @@ table{
     border-collapse: collapse;
 
 }
+#Map{
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 150px 50px;
+    h2{
+        color: var(--primary-color);
+    }
+}
 footer {
+    margin-top: 0px;
     background-color: var(--background-color);
     color: var(--text-color);
     padding: 50px;
-    margin-top: 100px;
+    h4{
+        color: var(--primary-color);
+    }
 }
 
 .footer-content {
@@ -279,12 +289,6 @@ footer {
     flex-direction: column;
     gap: 15px;
     max-width: 250px;
-}
-
-.footer-section h4 {
-    color: var(--primary-color);
-    font-size: 18px;
-    font-weight: 700;
 }
 
 .footer-section ul {
@@ -308,5 +312,33 @@ footer {
     margin-top: 40px;
     padding-top: 20px;
     border-top: 1px solid var(--text-color);
+    width: 100%;
     font-size: 14px;
 }
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+
+.newsletter input {
+    padding: 15px 21px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    background-color: transparent;
+    color: var(--primary-color);
+    font-size: 16px;
+    outline: none;
+    width: 100%;
+}
+
+.newsletter input::placeholder {
+    color: var(--text-color);
+}
+
+.newsletter input:focus {
+    border: 1px solid var(--text-color);
+}
+
+
