@@ -96,9 +96,16 @@ h2{
     display: flex;
     flex-direction: column;
 }
+.product .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+}
 .product .colors{
     display: flex;
     flex-direction: row;
+    gap: 5px;
 }
 .circle{
     width: 25px;
@@ -149,3 +156,4 @@ h2{
     object-fit: cover;
     display: block;
 }
+/* for footer  */

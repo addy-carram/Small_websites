@@ -1,7 +1,6 @@
 section{
      width:100%;
      margin: 70px;
-     height: 100vh;
 
 }
 h1{
@@ -20,7 +19,7 @@ p{
     text-indent: 0.5cm;
 }
 body{
-    background-color: aquamarine;
+    background-color: rgb(194, 251, 232);
 }
 ol{
     font-family: 'Times New Roman', Times, serif;
@@ -32,3 +31,7 @@ a{
     a:hover{
         background-color: yellow;
     }
+form{
+    margin: 100px ;
+    padding: 20px;
+}

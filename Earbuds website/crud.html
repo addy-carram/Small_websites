@@ -1,28 +1,77 @@
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="login_style.css" />
+    <script src="products.js"></script>
   </head>
   <body>
     <section>
       <div class="top">
-        <div class="card">
-          <h3>Insert</h3>
-        </div>
-        <div class="card">
-          <h3>Update</h3>
-        </div>
-        <div class="card">
-          <h3>Delete</h3>
-        </div>
-        <div class="card">
-          <h3>Select</h3>
+        <h2>Choose an opperation</h2>
+        <div class="content">
+          <div class="card">
+            <img src="images/plus.png" alt="" />
+            <p class="active">active</p>
+            <div class="card-text">
+              <h3>Insert</h3>
+              <p>Create a new item in your collection</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/application.png" alt="" />
+            <p class="active">active</p>
+            <div class="card-text">
+              <h3>Update</h3>
+              <p>Update a new item in your collection</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/delete.png" alt="" />
+            <p class="active">active</p>
+            <div class="card-text">
+              <h3>Delete</h3>
+              <p>Delete a new item in your collection</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/check.png" alt="" />
+            <p class="active">active</p>
+            <div class="card-text">
+              <h3>Select</h3>
+              <p>Select a item in your collection</p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="main"></div>
+      <div class="mainProduct" id="mainProduct"></div>
       <div class="bottom"></div>
+      <div id="modal" style="display: none">
+        <div id="modal-box" style="background-color: bisque">
+          <h3>Adaugă produs</h3>
+          <input type="text" id="inputLabel" placeholder="Nume produs" />
+          <input
+            type="text"
+            id="inputPrice"
+            placeholder="Pret (ex: 20 lei/kg)"
+          />
+          <button onclick="addProduct()">Salvează</button>
+          <button onclick="CloseModal()">Anulează</button>
+        </div>
+      </div>
     </section>
   </body>
+  <script>
+    //pentru ca buttonul sa ramana activ
+    document.querySelectorAll(".card").forEach((card) => {
+      card.addEventListener("click", () => {
+        document
+          .querySelectorAll(".card")
+          .forEach((c) => c.classList.remove("active"));
+        card.classList.add("active");
+      });
+    });
+  </script>
 </html>

@@ -8,19 +8,49 @@
       p {
         font-family: Arial, Helvetica, sans-serif;
       }
+      header {
+        background-color: rgb(133, 251, 133);
+        padding: 30px;
+        margin: 70px;
+        display: flex;
+        justify-content: center;
+        nav {
+          width: 700px;
+          height: auto;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          a {
+            text-decoration-line: none;
+          }
+        }
+      }
+      .photo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        img {
+          width: 300px;
+          height: 200px;
+          object-fit: cover;
+        }
+      }
     </style>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header>
+      <nav>
+        <a href="lab8_1.html"> Home</a>
+        <a href="lab8_2.html"> Formular</a>
+        <a href="lab8_3.html"> My interests</a>
+      </nav>
+    </header>
     <section>
-      <h1
-        style="
-          font-family: &quot;Times New Roman&quot;, Times, serif;
-          text-decoration: underline;
-        "
-      >
-        Adina Vacarciuc Anul 3
-      </h1>
+      <h1>Adina Vacarciuc Anul 3</h1>
+
       <p>
         Nu am nico experienta in programare dar cunosc limjaul Java, C#, SQL,
         HTML, CSS si Javascript
@@ -29,7 +59,14 @@
       <p>Cursuri Programarea vizuala si asistenta program side-server</p>
       <p>Nota asteptata: 10</p>
       <p>Interese: fotografia, design sa mananc bine si sa dorm</p>
-
+      <div class="photo">
+        <img src="jason-leung-deAJ1-iYaEg-unsplash.jpg" alt="" />
+        <img src="john-jennings-fg7J6NnebBc-unsplash.jpg" alt="" />
+        <img src="reinhart-julian-WxM465oM4j4-unsplash.jpg" alt="" />
+      </div>
+    </section>
+    <section>
+      <h2>My Portofolio</h2>
       <ul>
         <li>
           <a href="lab 1/portofoliu.html">Portofoliu</a>
