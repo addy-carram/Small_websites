@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="login_style.css" />
     <script src="products.js"></script>
+    <script src="crud.js"></script>
   </head>
   <body>
     <section>
@@ -18,6 +19,7 @@
             <div class="card-text">
               <h3>Insert</h3>
               <p>Create a new item in your collection</p>
+              <button onclick="OpenModal()">Insert</button>
             </div>
           </div>
           <div class="card">
@@ -26,6 +28,7 @@
             <div class="card-text">
               <h3>Update</h3>
               <p>Update a new item in your collection</p>
+              <button onclick="updatee()">Delete</button>
             </div>
           </div>
           <div class="card">
@@ -34,6 +37,7 @@
             <div class="card-text">
               <h3>Delete</h3>
               <p>Delete a new item in your collection</p>
+              <button onclick="deletee()">Delete</button>
             </div>
           </div>
           <div class="card">
@@ -42,14 +46,14 @@
             <div class="card-text">
               <h3>Select</h3>
               <p>Select a item in your collection</p>
+              <button onclick="selectt()">Select</button>
             </div>
           </div>
         </div>
       </div>
-      <div class="mainProduct" id="mainProduct"></div>
-      <div class="bottom"></div>
+      <!-- the appearence of the modal -->
       <div id="modal" style="display: none">
-        <div id="modal-box" style="background-color: bisque">
+        <div id="modal-box">
           <h3>Adaugă produs</h3>
           <input type="text" id="inputLabel" placeholder="Nume produs" />
           <input
@@ -61,6 +65,8 @@
           <button onclick="CloseModal()">Anulează</button>
         </div>
       </div>
+      <div class="mainProduct" id="mainProduct"></div>
+      <div class="bottom"></div>
     </section>
   </body>
   <script>

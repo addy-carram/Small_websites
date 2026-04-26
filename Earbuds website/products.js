@@ -35,20 +35,6 @@ productsData.forEach(data =>{
 
 console.log('products card are created succesuffuluy');
 }
-function OpenModal(){
-    document.getElementById('modal').style.disply='flex';
-}
-function CloseModal(){
-    document.getElementById('modal').style.disply='none';
-}
-function addProducts(){
-    const name=document.getElementById('input1').value;
-    const price=document.getElementById('input2').value;
-    
-    productsData.push({label:name,number:price});
-    createProductCards;
-    closeModal();
-
-}
+ 
 
 window.addEventListener('DOMContentLoaded',createProductCards);
