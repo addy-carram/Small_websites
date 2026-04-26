@@ -17,7 +17,7 @@ main{
     height: auto;
     padding: 50px;
     border-radius: 50px;
-    border: solid 2px var(green);
+    border: solid 2px green;
     background-color: var(--secondary-color);
     justify-self: center;
 }
@@ -203,3 +203,49 @@ h2{
             color: rgb(217, 217, 217);
         }
     }
+    @media(max-width:480px){
+        body{
+            margin: 100px 20px 20px 20px;
+        }
+        main{
+            width: 60%;
+        }
+        /* for the crud operation */
+        .top{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    padding:0px;
+
+    .content{
+        width: 100%;
+        padding: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .card{
+        width: 350px;
+        height: 150px;
+        margin-bottom: 0px;
+        }
+        
+       
+    }
+    .mainProduct{
+        margin: 100px 10px 10px 10px;
+        padding: 0px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        .product{
+            height: auto;
+            width: auto;
+        }
+    }
+
+    
+
+    
+}
+    

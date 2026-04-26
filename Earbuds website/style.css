@@ -19,10 +19,10 @@ header{
     padding: 66px;
     display: flex;
     justify-content: right;
-    background: transparent;
-    position: fixed;
+    background:transparent;
+    position: absolute;
     z-index: 1;
-    top: 0;
+    top: 1;
 
 }
 nav{
@@ -39,6 +39,9 @@ nav a{
     font-weight: 400;
     text-transform: uppercase;
     text-decoration: none;
+}
+nav a:hover{
+    text-decoration: underline;
 }
 main{
     width: 100%;
@@ -82,35 +85,55 @@ h2{
     display: flex;
     flex-direction: row;
     gap: 100px;
+    background-color: transparent;
 }
 .product{
     display: flex;
     flex-direction: column;
+    
+}
+.product {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding-bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     img{
         width: 340px;
         height: 342px;
         object-fit: cover;
     }
 }
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 15px 15px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
 .product .details{
     display: flex;
     flex-direction: column;
+    background-color: transparent;
 }
 .product .content{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding-top: 10px;
+    background-color: transparent;
 }
 .product .colors{
     display: flex;
     flex-direction: row;
+    padding-right: 5px;
     gap: 5px;
+    background-color: transparent;
 }
 .circle{
     width: 25px;
     height: 25px;
     border-radius: 100px;
+    background-color: transparent;
 }
 .r{
     background-color: var(--first);
@@ -133,14 +156,14 @@ h2{
 }
 
 .swiper {
-    width: 60%;        /* make this smaller so more side image shows */
+    width: 60%;        
     padding: 50px 0;
-    overflow: visible; /* must be visible so slides peek out of swiper */
+    overflow: visible;
     margin: 0 auto;
 }
 
 .swiper-slide {
-    width: 700px;      /* fixed width, not 100% */
+    width: 700px;     
     border-radius: 30px;
     overflow: hidden;
     opacity: 0.5;
@@ -157,3 +180,118 @@ h2{
     display: block;
 }
 /* for footer  */
+footer{
+    width: auto;
+    height: 500px;
+    margin: 150px 100px 50px 100px;
+    padding: 50px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+
+    .text-content{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        gap: 5px
+       
+    }
+    
+    label{
+        font-size: 25px;
+    }
+    input{
+        width: auto;
+        height: 40px;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+         align-items: left;
+        gap: 50px
+    }
+}
+
+/* responsive for mobile */
+@media(max-width:480px){
+    /* hero section */
+    main{
+    width: 100%;
+    height: 50vh;
+    padding: 100px;
+    padding-left: 300px;
+    padding-right: 20px;
+    background-image:url(images/rupixen-com-3I41s9-BMro-unsplash.jpg) ;
+    background-size: cover;
+    
+    h1{
+        font-size: 30px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .containt{
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        justify-content: flex-start;
+
+    }}
+    /* header */
+    header{
+        padding: 20px 30px 20px 20px;
+    }
+    nav{
+        gap: 10px;
+    }
+    nav a{
+        font-size: 15px;
+    }
+    /* section products */
+    h2{
+        font-size: 30px;
+    }
+    section {
+    margin: 100px 0px 0px 0px;    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.products-all{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 0px;
+}
+/* galerry part */
+.gallery-section{
+    padding: 0px;
+    margin: 100px 0px 0px 0px;
+}
+.swiper{
+    padding: 0px;
+}
+.swiper .mySwiper{
+    margin: 0px;
+}
+.swiper-wrapper{
+    width: 100%;
+    margin: 0px;
+}
+/* footer */
+footer{
+    width: 100%;
+    height: 50vh;
+    margin: 0px;
+    margin-top: 100px;
+    padding: 20px 10px 20px 10px;
+
+}
+}
