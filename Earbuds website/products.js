@@ -1,18 +1,18 @@
 
 const productsData = [
-    {label:"Mar", number:"20 lei/kg"},
-    {label:"Mar", number:"20 lei/kg"},
-    {label:"Mar", number:"20 lei/kg"},
-    {label:"Mar", number:"20 lei/kg"},
-    {label:"Mar", number:"20 lei/kg"},
-    {label:"Mar", number:"20 lei/kg"},
-    {label:"Mar", number:"20 lei/kg"},
-    {label:"Mar", number:"20 lei/kg"},
-    {label:"Mar", number:"20 lei/kg"},
-    {label:"Mar", number:"20 lei/kg"},
-    {label:"Mar", number:"20 lei/kg"},
-    {label:"Mar", number:"20 lei/kg"},
-    {label:"Mar", number:"20 lei/kg"}
+    {label:"Solo", number:"20 lei/kg"},
+    {label:"Solo", number:"20 lei/kg"},
+    {label:"Solo", number:"20 lei/kg"},
+    {label:"Solo", number:"20 lei/kg"},
+    {label:"Solo", number:"20 lei/kg"},
+    {label:"Solo", number:"20 lei/kg"},
+    {label:"Solo", number:"20 lei/kg"},
+    {label:"Solo", number:"20 lei/kg"},
+    {label:"Solo", number:"20 lei/kg"},
+    {label:"Solo", number:"20 lei/kg"},
+    {label:"Solo", number:"20 lei/kg"},
+    {label:"Solo", number:"20 lei/kg"},
+    {label:"Solo", number:"20 lei/kg"}
 ];
 //preparing the main div for objects
 function createProductCards(){
@@ -28,7 +28,7 @@ productsData.forEach(data =>{
     card.className='product';
     card.innerHTML=`
     <h2 >${data.label}</h2>
-    <h3 >${data.number}</h3>
+    <p >${data.number}</h3>
     `;
     container.appendChild(card);
 })

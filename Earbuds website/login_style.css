@@ -199,8 +199,8 @@ h2{
             margin:0px;
         }
         p{
-            font-size: 18px;
-            color: rgb(217, 217, 217);
+            font-size: 22px;
+            color: var(--primary-color);
         }
     }
     #modal {
@@ -220,6 +220,10 @@ h2{
     flex-direction: row;
     gap: 15px;
     width: 400px;
+    button{
+        background-color: lightgreen;
+        border: 0.5px solid green;
+    }
 }
     @media(max-width:480px){
         body{
@@ -230,11 +234,11 @@ h2{
         }
         /* for the crud operation */
         .top{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    align-items: center;
-    padding:0px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: center;
+        padding:0px;
 
     .content{
         width: 100%;
