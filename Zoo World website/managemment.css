@@ -1,0 +1,143 @@
+:root {
+   
+    
+    --primary-color: rgb(213, 255, 207);
+    --secondary-color: rgb(69, 123, 157);
+    --background-color: rgb(2, 17, 0);
+    --text-color: rgb(109, 161, 101);
+}
+
+main{
+    background-image: url(images/leopard.avif);
+}
+#MainForm{
+    
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--background-color);
+    .context{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding-left: 50px;
+        justify-content: center;
+        align-items: center;
+        .text{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            text-align: center;
+        }
+    }
+
+}
+#Formular{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin: 150px 50px 150px 50px;
+    .form-left{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+       
+
+    }
+     input{
+            width: 100%;
+            height: 30px;
+            border: 1px solid var(--text-color);
+            background-color: rgb(234, 252, 232);
+            color: var(--background-color);
+
+        }
+    select{
+             width: 100%;
+            height: 30px;
+            border: 1px solid var(--text-color);
+            background-color: rgb(247, 253, 246);
+            color: var(--text-color);
+
+    }
+    
+        .input{
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            align-items: center;
+            input{
+                width: 32px;
+                height: 32px;
+
+            }
+            label{
+                display: flex;
+                flex-direction: row;
+                gap: 15px;
+                align-items: center;
+            }
+        }
+        fieldset{
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            gap: 20px;
+            border: solid 0.5px var(--text-color);
+            color: var(--text-color);
+            input{
+                width: 32px;
+                height: 32px;
+            }
+            label{
+                display: flex;
+                flex-direction: row;
+                gap: 15px;
+                align-items: center;
+            }
+
+        }
+        label{
+            color: var(--text-color);
+            font-size: 20px;
+
+        }
+        input:focus{
+            border: 1px solid var(--background-color);
+
+        }
+        /* the textarea */
+        textarea{
+            width: 100%;
+            height: 100px;
+            color: var(--text-color);
+            padding: 20px;
+            border: 1px solid var(--text-color);
+            
+        }
+        /* stylizing the buttons reset and calcul */
+        button:hover{
+            border: 2px solid var(--text-color);
+            background-color: rgb(2, 77, 2);
+            color: var(--primary-color);
+        }
+        .secondary{
+            border: 1px solid var(--text-color);
+            color: var(--text-color);
+
+        }
+        .secondary:hover{
+            background-color: var(--background-color);
+        }
+
+        .rezult-right{
+            width: 100%;
+            height: 100%;
+            border: 1px solid var(--text-color);
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+        }
+}
