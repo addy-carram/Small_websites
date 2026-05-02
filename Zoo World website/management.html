@@ -53,35 +53,24 @@
       </div>
     </section>
     <section id="Formular">
-      <!-- <h2>Form</h2> -->
-      <!-- Nume vizitator – câmp text
-Vârsta – câmp numeric
-Numărul de bilete – câmp numeric
-Prețul unui bilet – câmp numeric
-Animal preferat – listă derulantă
-Dorește ghid? – checkbox
-Tipul vizitei – radio buttons (individuală / familie / grup)
-Mesaj suplimentar – textarea
-Buton Calculează
-Buton Resetează -->
       <div class="form-left">
         <h2>Form</h2>
         <form action="" class="form-left">
           <div>
             <label for="name">Name</label>
-            <input type="name" />
+            <input type="text" id="name" placeholder="Jonh Briesly" />
           </div>
           <div>
             <label for="age">Age</label>
-            <input type="number" for="age" />
+            <input type="number" for="age" id="age" placeholder=" 25" />
           </div>
           <div>
             <label for="number">Number of tickets</label>
-            <input type="number" for="number" />
+            <input type="number" for="number" id="tickets" placeholder="4" />
           </div>
           <div>
             <label for="price">Price of tickets</label>
-            <input type="number" for="price" />
+            <input type="number" for="price" id="price" placeholder="30$" />
           </div>
           <div>
             <label for="animal">Select Animal</label>
@@ -98,7 +87,7 @@ Buton Resetează -->
 
           <div class="input">
             <label>
-              <input type="checkbox" name="ghid" value="yeah" />
+              <input type="checkbox" name="ghid" value="yeah" id="guide" />
               Want a guide?
             </label>
           </div>
@@ -120,13 +109,19 @@ Buton Resetează -->
             id="message"
             placeholder="Write your comment"
           ></textarea>
-          <button>Calcul</button>
-          <button class="secondary">Resert</button>
+          <button type="button" onclick="calcul()" class="button">
+            Calcul
+          </button>
+          <button type="button" class="secondary" onclick="resetForm()">
+            Resert
+          </button>
         </form>
       </div>
-      <div class="rezult-right" style="border: 1px solid transparent">
+      <div class="rezult-right" style="border: none">
         <h2>Rezult</h2>
-        <div class="rezult-right"></div>
+        <div class="rezult-right a" id="rezult">
+          <p id="first-rezult">heyy, we wait for your command</p>
+        </div>
       </div>
     </section>
     <footer id="Contact">
@@ -171,4 +166,5 @@ Buton Resetează -->
       </div>
     </footer>
   </body>
+  <script src="form.js"></script>
 </html>
